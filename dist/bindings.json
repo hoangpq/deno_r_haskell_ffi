@@ -1,0 +1,1 @@
+{"name":"r_sys","littleEndian":true,"symbols":{"test_serde":{"parameters":[],"result":"ptr","nonBlocking":false}},"typeDefs":{"A":{"b":"Vec"}},"tsTypes":{"A":"export type A = {\n    b: Array<string>;\n};"}}

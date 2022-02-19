@@ -1,0 +1,622 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-apple-darwin17.7.0
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jun 25 20:02:54 2022
+
+# Variables
+
+# environment
+LC_TERMINAL = iTerm2
+# environment
+JDK_18 = /Users/hoangpq/.sdkman/candidates/java/current
+# environment
+JAVA_HOME = /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home
+# environment
+AS = as
+# environment
+out = /nix/store/8ry6q758p8in0rahh53pw1ib9ysh00bj-ghc-shell-for-pgrest-0.1.0.0
+# environment
+LC_ALL = C
+# environment
+SDKMAN_PLATFORM = darwinx64
+# environment
+AR = ar
+# environment
+shellHook = 
+# environment
+PNPM_HOME = /Users/hoangpq/Library/pnpm
+# environment
+TEMPDIR = /tmp
+# environment
+SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+# environment
+TMPDIR = /tmp
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.13106701357.13106701363.1170C01D-24E5-4C5B-B97D-76CFCEBE05CA
+# environment
+rvm_docs_type = 
+# environment
+doInstallCheck = 
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/69/r_nh2ysj7sj71dnl2ybgbq1r0000gn/T/vscode-ipc-4facd1e7-a578-43d1-a79e-b8f6538d6f2e.sock
+# environment
+rvm_quiet_flag = 
+# environment
+R_LIBS_SITE = /nix/store/8x3iwd2y3igxvdn5pr5zf2aqhjw9z9w4-apple-framework-Cocoa/library:/nix/store/jzwln877sazlj44vgx6yh72s5y21mw4p-apple-framework-AppKit/library:/nix/store/jg8w86snrhav9p3as5j36f2i69ld2yxf-apple-framework-ApplicationServices/library:/nix/store/fvnx6a97p447a875vzd0f7dw4dzshnsv-apple-framework-CoreGraphics/library:/nix/store/j3w4bivf86023ssfrcarz4rzmyasz4c1-apple-framework-Accelerate/library:/nix/store/d3yikvaalaw5c9wyyf9q85z2lhfmbiwp-apple-framework-CoreWLAN/library:/nix/store/i8j8scq77m0dshwhbnafxkn8dywqfbai-apple-framework-SecurityFoundation/library:/nix/store/v4y83d5cjc50mlk5m2w16ci52sn0shsk-apple-framework-IOBluetooth/library:/nix/store/cp23vz6i163r93hr25vpvldnfzslnarc-apple-framework-CoreBluetooth/library:/nix/store/r3xpci2zdmpx15jkcndqhb21m49sw2y7-apple-framework-IOKit/library:/nix/store/4j9xmssdbgfnvi3bgg856z7b5p4fpd7d-apple-framework-IOSurface/library:/nix/store/hg4pskm667mx3y8lv210yjrm0ipgymkx-apple-framework-SystemConfiguration/library:/nix/store/i1wvpqnfsf6n07g41lbz6m1k4kbml1dg-apple-framework-Security/library:/nix/store/2dwkrxjmj22liv00mgrckzddaii0bqhg-apple-framework-CoreServices/library:/nix/store/x5vpakzw6n85b8qqvyr9m1nv9bclz0sj-apple-framework-CFNetwork/library:/nix/store/c7iizwq7gq7r4cm7ml5y5dh9gihva4sj-apple-framework-CoreAudio/library:/nix/store/w3i72m9rgdjiziwghvy78ycd0xnk9f1c-apple-framework-CoreData/library:/nix/store/nx9giic94wgg374rl7m9xinhrk9alamw-apple-framework-CoreFoundation/library:/nix/store/ja4b05s27gcszv7ycqap7lni0bl5jpkx-apple-framework-DiskArbitration/library:/nix/store/hmk88wi4ika96fms8d8bj36bby4z056b-apple-framework-NetFS/library:/nix/store/17n9b559i15fcmvvghk2a8lzagi7zhvi-apple-framework-OpenDirectory/library:/nix/store/xq8w5n0n3s1hzdj0vjwayc57i15y09yg-apple-framework-ServiceManagement/library:/nix/store/v6xwamxkw8dpj0bykng9369ps1h1nsmh-apple-framework-CoreText/library:/nix/store/i5jjdzjm4far7mljs2qviis7p2g5pb4z-apple-framework-ImageIO/library:/nix/store/csax9kmf21ziwsq4fg6ky1fmwirynpwg-apple-framework-AudioToolbox/library:/nix/store/qr5gf44fd6hv6kaym3gm7675vlqz7003-apple-framework-CoreMIDI/library:/nix/store/2bqjyl8kpz10n2zhmmhpla7zbdm1cvrk-apple-framework-AudioUnit/library:/nix/store/p0smh0s88y504xn48bi02ih0rlv02cmb-apple-framework-Carbon/library:/nix/store/ndv5lb2zgwbfv151hr87j4w322c3c2sc-apple-framework-Foundation/library:/nix/store/59n42rjvl9a5ifvxd517d8w1vh1vd8gb-apple-framework-QuartzCore/library:/nix/store/vljag50j68phc4b12kjn58j72wmkqyn2-apple-framework-CoreImage/library:/nix/store/rvwfh036p037cl965fvsfqyzdi1xr9ll-apple-framework-CoreVideo/library:/nix/store/wplwzmzd04hm6a347gs2879q7is7plz7-apple-framework-OpenGL/library:/nix/store/w4lfw999vrhflqp3i37bkd4jwvz60h9r-apple-framework-Metal/library:/nix/store/v7zbw5mg831h6r6708gcj3yajh1qg43q-apple-framework-OpenCL/library:/nix/store/v6n57qpb4nbk8b5h4acpizv8dm4vr1sc-apple-framework-UIFoundation/library:/nix/store/kahjvhqcjg4n2sdsmm479klhyr3ddn30-r-rmarkdown-2.13/library:/nix/store/r709978cill1yrj72v7ds5j0bccshnbx-r-bslib-0.3.1/library:/nix/store/2pirw1cb4b1qqy30037x52y7glfw502c-r-htmltools-0.5.2/library:/nix/store/hwfblmbrl8iz9bv88iyf9m5aaqd9gbh4-r-base64enc-0.1-3/library:/nix/store/z0lbf3ffxfar6szrc03f2ppxxnav7ssf-r-digest-0.6.29/library:/nix/store/qvr19nxxc05sq7q1qklvr1r57qsa6bhq-r-fastmap-1.1.0/library:/nix/store/gjkc2r71fnhf8c1gl1g8n6qqfcig22h7-r-rlang-1.0.2/library:/nix/store/bxvya463bismnr9kn6wvwgnyvz0x27lz-r-jquerylib-0.1.4/library:/nix/store/8p1h7p84kmn1rwz8sy7wi2dgji225zjy-r-jsonlite-1.8.0/library:/nix/store/yy6rx950zx6kk5as08i3kr5dgaphhy1v-r-sass-0.4.1/library:/nix/store/yywhlr9hlhamhb2fbwhrcpmz3ysipawp-r-fs-1.5.2/library:/nix/store/b1q1krx7zzmylx6i0gprpy3ch9x763xz-r-R6-2.5.1/library:/nix/store/vc5msv7mvjpvz9jqlk83plyrsj3ghb2a-r-rappdirs-0.3.3/library:/nix/store/s54513h3mgwh2wya2mymr77fi53gw4nc-r-evaluate-0.15/library:/nix/store/81q6hkpckx7r5ngclkark7lvydmz1cv5-r-knitr-1.38/library:/nix/store/cawhcfjrs1vawh6b93c64iblk4gi9lmc-r-highr-0.9/library:/nix/store/swmr4a8h1bamznw1iczday8pf9vmq4nx-r-xfun-0.30/library:/nix/store/lwr940r7w1mhbhykppkz8ijrfm760a8q-r-stringr-1.4.0/library:/nix/store/wn57f1ajhmch907nfy9jr6vxh0mnwpa1-r-glue-1.6.2/library:/nix/store/i4ld7ja5ajwvsd0yv65iam8jvnz30hdg-r-magrittr-2.0.3/library:/nix/store/h5vfjj28banjvyi71fdlm602nfd4sr9g-r-stringi-1.7.6/library:/nix/store/kpa0ls92v2ygrcvxz5pcs4h4i1f145b4-r-yaml-2.3.5/library:/nix/store/cqnrvzqf1sj0iqvzjyr2vw3qa3b7fs91-r-tinytex-0.38/library:/nix/store/1ydw20is426251539840srcy4ays4965-r-rgl-0.108.3/library:/nix/store/8bfkc99vln900sw2mqpl2pj1x09q947f-r-htmlwidgets-1.5.4/library:/nix/store/qkijxlsz02l7drdjmakladwmswkr2fq5-r-magick-2.7.3/library:/nix/store/gwjg2af2pif6q15f005v7nv3v1rclszs-r-curl-4.3.2/library:/nix/store/p8198x17hfa5r3c4nhph9saswvhs3776-r-Rcpp-1.0.8.3/library:/nix/store/7swjvnr5asrsv2l7j9l7pigwzxp3ni1l-r-ggplot2-3.3.5/library:/nix/store/4vq6b1b799qs00vhbyy7swrl92dv5wnw-r-gtable-0.3.0/library:/nix/store/97cdlrpsqm35bq7w5ijrjncb9d0sbvdc-r-isoband-0.2.5/library:/nix/store/g1lfn4bcqb9hddckbphrhfhn4afhwvsr-r-MASS-7.3-56/library:/nix/store/zn29jy6aigd9bgbvwlb1m1km7wlq6kgn-r-mgcv-1.8-40/library:/nix/store/klhbyglapvs5qwk1lpl1wwwr3rvf41si-r-Matrix-1.4-1/library:/nix/store/ia1k78i7sw40qcrrkj6xw5mqrvz5zm9i-r-lattice-0.20-45/library:/nix/store/66cwy8svvvxzw8v2i02mvgaq7qfn4vrj-r-nlme-3.1-157/library:/nix/store/x2cnrbgfc3cmd4wq951q5ym800lydhwk-r-scales-1.1.1/library:/nix/store/sbg86xndibid3197pfqdkik8p2j9jxr0-r-farver-2.1.0/library:/nix/store/g7fr9qnd5k2l8a7bgk8smz0k6gfaplll-r-labeling-0.4.2/library:/nix/store/rk0b8ib4428ip59r7fp1zpamqkshps4n-r-lifecycle-1.0.1/library:/nix/store/798vz3k2sz0g96b20xy5kgfhar2lv0aa-r-munsell-0.5.0/library:/nix/store/r908s0in2i37vav6r5gpcvqki77jx5j3-r-colorspace-2.0-3/library:/nix/store/jv8wz299vsaj355whx65dy4bmdic7158-r-RColorBrewer-1.1-3/library:/nix/store/cb6xkbhxbij35lb11an84vh557mbv6mg-r-viridisLite-0.4.0/library:/nix/store/y0nhmxdq84qzm3fbiqkpik43042hkwnj-r-tibble-3.1.6/library:/nix/store/jz1c8j9s1x3k2ixrnca23b4q44fl3v2y-r-ellipsis-0.3.2/library:/nix/store/7lyy10h45pqrzgyaykkxvz485zvzh2by-r-fansi-1.0.3/library:/nix/store/2qxcg1cp808sfs8873drxphvfdy43hck-r-pillar-1.7.0/library:/nix/store/6nlp4r5maciad1pjliid1s75mxmi03xh-r-cli-3.2.0/library:/nix/store/xzqjvr1ymi05ccvnv4imxmzbv1qvphw5-r-crayon-1.5.1/library:/nix/store/cdwvsd9srf18f8x77kjgrvkgg33p9q7w-r-utf8-1.2.2/library:/nix/store/9l10icq0cyfs3hvgsj7c5c41cbywf84n-r-vctrs-0.4.0/library:/nix/store/qrdifd44za9q99imndxap5zh88zqbgc2-r-pkgconfig-2.0.3/library:/nix/store/qwbk6cxmxb50ph5ka7zai6jrmah855di-r-withr-2.5.0/library:/nix/store/5md4mg53hq1b3fx2ircd87abfyqhqb5n-r-rgdal-1.5-29/library:/nix/store/6lan7x7cc6njxh8vg5lljhcq4yql8ri7-r-sp-1.4-6/library:/nix/store/cxgavx802sfxdl8gwd9samzmrbpddgs7-swift-corefoundation-unstable-2018-09-14/library
+# environment
+rvm_ruby_bits = 
+# environment
+ 
+VSCODE_CWD = /Users/hoangpq/CLionProjects/r-binding
+# environment
+NIX_CFLAGS_COMPILE =  -frandom-seed=8ry6q758p8 -Wno-deprecated-declarations -F/System/Library/PrivateFrameworks -isystem /nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50/include -isystem /nix/store/ac6v30cw59y83hqynxrqbzcmlqjq9572-libcxx-11.1.0-dev/include -isystem /nix/store/agzijh5jngnb2j10ary2m32xafl4hb68-libcxxabi-11.1.0-dev/include -isystem /nix/store/q7fyhi0m8q9lrla952swz6k7jmqq9sxy-compiler-rt-libc-11.1.0-dev/include -iframework /nix/store/8x3iwd2y3igxvdn5pr5zf2aqhjw9z9w4-apple-framework-Cocoa/Library/Frameworks -iframework /nix/store/jzwln877sazlj44vgx6yh72s5y21mw4p-apple-framework-AppKit/Library/Frameworks -iframework /nix/store/jg8w86snrhav9p3as5j36f2i69ld2yxf-apple-framework-ApplicationServices/Library/Frameworks -iframework /nix/store/fvnx6a97p447a875vzd0f7dw4dzshnsv-apple-framework-CoreGraphics/Library/Frameworks -iframework /nix/store/j3w4bivf86023ssfrcarz4rzmyasz4c1-apple-framework-Accelerate/Library/Frameworks -iframework /nix/store/d3yikvaalaw5c9wyyf9q85z2lhfmbiwp-apple-framework-CoreWLAN/Library/Frameworks -iframework /nix/store/i8j8scq77m0dshwhbnafxkn8dywqfbai-apple-framework-SecurityFoundation/Library/Frameworks -iframework /nix/store/v4y83d5cjc50mlk5m2w16ci52sn0shsk-apple-framework-IOBluetooth/Library/Frameworks -iframework /nix/store/cp23vz6i163r93hr25vpvldnfzslnarc-apple-framework-CoreBluetooth/Library/Frameworks -iframework /nix/store/r3xpci2zdmpx15jkcndqhb21m49sw2y7-apple-framework-IOKit/Library/Frameworks -iframework /nix/store/4j9xmssdbgfnvi3bgg856z7b5p4fpd7d-apple-framework-IOSurface/Library/Frameworks -isystem /nix/store/s6wrm5gs0x09f91azwfg5zmwp53zjvwy-apple-lib-xpc/include -iframework /nix/store/hg4pskm667mx3y8lv210yjrm0ipgymkx-apple-framework-SystemConfiguration/Library/Frameworks -iframework /nix/store/i1wvpqnfsf6n07g41lbz6m1k4kbml1dg-apple-framework-Security/Library/Frameworks -iframework /nix/store/2dwkrxjmj22liv00mgrckzddaii0bqhg-apple-framework-CoreServices/Library/Frameworks -iframework /nix/store/x5vpakzw6n85b8qqvyr9m1nv9bclz0sj-apple-framework-CFNetwork/Library/Frameworks -iframework /nix/store/c7iizwq7gq7r4cm7ml5y5dh9gihva4sj-apple-framework-CoreAudio/Library/Frameworks -iframework /nix/store/w3i72m9rgdjiziwghvy78ycd0xnk9f1c-apple-framework-CoreData/Library/Frameworks -iframework /nix/store/nx9giic94wgg374rl7m9xinhrk9alamw-apple-framework-CoreFoundation/Library/Frameworks -iframework /nix/store/ja4b05s27gcszv7ycqap7lni0bl5jpkx-apple-framework-DiskArbitration/Library/Frameworks -iframework /nix/store/hmk88wi4ika96fms8d8bj36bby4z056b-apple-framework-NetFS/Library/Frameworks -iframework /nix/store/17n9b559i15fcmvvghk2a8lzagi7zhvi-apple-framework-OpenDirectory/Library/Frameworks -iframework /nix/store/xq8w5n0n3s1hzdj0vjwayc57i15y09yg-apple-framework-ServiceManagement/Library/Frameworks -iframework /nix/store/v6xwamxkw8dpj0bykng9369ps1h1nsmh-apple-framework-CoreText/Library/Frameworks -iframework /nix/store/i5jjdzjm4far7mljs2qviis7p2g5pb4z-apple-framework-ImageIO/Library/Frameworks -iframework /nix/store/csax9kmf21ziwsq4fg6ky1fmwirynpwg-apple-framework-AudioToolbox/Library/Frameworks -iframework /nix/store/qr5gf44fd6hv6kaym3gm7675vlqz7003-apple-framework-CoreMIDI/Library/Frameworks -iframework /nix/store/2bqjyl8kpz10n2zhmmhpla7zbdm1cvrk-apple-framework-AudioUnit/Library/Frameworks -iframework /nix/store/p0smh0s88y504xn48bi02ih0rlv02cmb-apple-framework-Carbon/Library/Frameworks -iframework /nix/store/ndv5lb2zgwbfv151hr87j4w322c3c2sc-apple-framework-Foundation/Library/Frameworks -isystem /nix/store/gkvg82vcqxgaqcx8sdmxdfbc3na3sxbz-objc4-709.1/include -iframework /nix/store/59n42rjvl9a5ifvxd517d8w1vh1vd8gb-apple-framework-QuartzCore/Library/Frameworks -iframework /nix/store/vljag50j68phc4b12kjn58j72wmkqyn2-apple-framework-CoreImage/Library/Frameworks -iframework /nix/store/rvwfh036p037cl965fvsfqyzdi1xr9ll-apple-framework-CoreVideo/Library/Frameworks -iframework /nix/store/wplwzmzd04hm6a347gs2879q7is7plz7-apple-framework-OpenGL/Library/Frameworks -iframework /nix/store/w4lfw999vrhflqp3i37bkd4jwvz60h9r-apple-framework-Metal/Library/Frameworks -iframework /nix/store/v7zbw5mg831h6r6708gcj3yajh1qg43q-apple-framework-OpenCL/Library/Frameworks -iframework /nix/store/v6n57qpb4nbk8b5h4acpizv8dm4vr1sc-apple-framework-UIFoundation/Library/Frameworks -iframework /nix/store/cxgavx802sfxdl8gwd9samzmrbpddgs7-swift-corefoundation-unstable-2018-09-14/Library/Frameworks -isystem /nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50/include -isystem /nix/store/ac6v30cw59y83hqynxrqbzcmlqjq9572-libcxx-11.1.0-dev/include -isystem /nix/store/agzijh5jngnb2j10ary2m32xafl4hb68-libcxxabi-11.1.0-dev/include -isystem /nix/store/q7fyhi0m8q9lrla952swz6k7jmqq9sxy-compiler-rt-libc-11.1.0-dev/include -iframework /nix/store/8x3iwd2y3igxvdn5pr5zf2aqhjw9z9w4-apple-framework-Cocoa/Library/Frameworks -iframework /nix/store/jzwln877sazlj44vgx6yh72s5y21mw4p-apple-framework-AppKit/Library/Frameworks -iframework /nix/store/jg8w86snrhav9p3as5j36f2i69ld2yxf-apple-framework-ApplicationServices/Library/Frameworks -iframework /nix/store/fvnx6a97p447a875vzd0f7dw4dzshnsv-apple-framework-CoreGraphics/Library/Frameworks -iframework /nix/store/j3w4bivf86023ssfrcarz4rzmyasz4c1-apple-framework-Accelerate/Library/Frameworks -iframework /nix/store/d3yikvaalaw5c9wyyf9q85z2lhfmbiwp-apple-framework-CoreWLAN/Library/Frameworks -iframework /nix/store/i8j8scq77m0dshwhbnafxkn8dywqfbai-apple-framework-SecurityFoundation/Library/Frameworks -iframework /nix/store/v4y83d5cjc50mlk5m2w16ci52sn0shsk-apple-framework-IOBluetooth/Library/Frameworks -iframework /nix/store/cp23vz6i163r93hr25vpvldnfzslnarc-apple-framework-CoreBluetooth/Library/Frameworks -iframework /nix/store/r3xpci2zdmpx15jkcndqhb21m49sw2y7-apple-framework-IOKit/Library/Frameworks -iframework /nix/store/4j9xmssdbgfnvi3bgg856z7b5p4fpd7d-apple-framework-IOSurface/Library/Frameworks -isystem /nix/store/s6wrm5gs0x09f91azwfg5zmwp53zjvwy-apple-lib-xpc/include -iframework /nix/store/hg4pskm667mx3y8lv210yjrm0ipgymkx-apple-framework-SystemConfiguration/Library/Frameworks -iframework /nix/store/i1wvpqnfsf6n07g41lbz6m1k4kbml1dg-apple-framework-Security/Library/Frameworks -iframework /nix/store/2dwkrxjmj22liv00mgrckzddaii0bqhg-apple-framework-CoreServices/Library/Frameworks -iframework /nix/store/x5vpakzw6n85b8qqvyr9m1nv9bclz0sj-apple-framework-CFNetwork/Library/Frameworks -iframework /nix/store/c7iizwq7gq7r4cm7ml5y5dh9gihva4sj-apple-framework-CoreAudio/Library/Frameworks -iframework /nix/store/w3i72m9rgdjiziwghvy78ycd0xnk9f1c-apple-framework-CoreData/Library/Frameworks -iframework /nix/store/nx9giic94wgg374rl7m9xinhrk9alamw-apple-framework-CoreFoundation/Library/Frameworks -iframework /nix/store/ja4b05s27gcszv7ycqap7lni0bl5jpkx-apple-framework-DiskArbitration/Library/Frameworks -iframework /nix/store/hmk88wi4ika96fms8d8bj36bby4z056b-apple-framework-NetFS/Library/Frameworks -iframework /nix/store/17n9b559i15fcmvvghk2a8lzagi7zhvi-apple-framework-OpenDirectory/Library/Frameworks -iframework /nix/store/xq8w5n0n3s1hzdj0vjwayc57i15y09yg-apple-framework-ServiceManagement/Library/Frameworks -iframework /nix/store/v6xwamxkw8dpj0bykng9369ps1h1nsmh-apple-framework-CoreText/Library/Frameworks -iframework /nix/store/i5jjd 
+zjm4far7mljs2qviis7p2g5pb4z-apple-framework-ImageIO/Library/Frameworks -iframework /nix/store/csax9kmf21ziwsq4fg6ky1fmwirynpwg-apple-framework-AudioToolbox/Library/Frameworks -iframework /nix/store/qr5gf44fd6hv6kaym3gm7675vlqz7003-apple-framework-CoreMIDI/Library/Frameworks -iframework /nix/store/2bqjyl8kpz10n2zhmmhpla7zbdm1cvrk-apple-framework-AudioUnit/Library/Frameworks -iframework /nix/store/p0smh0s88y504xn48bi02ih0rlv02cmb-apple-framework-Carbon/Library/Frameworks -iframework /nix/store/ndv5lb2zgwbfv151hr87j4w322c3c2sc-apple-framework-Foundation/Library/Frameworks -isystem /nix/store/gkvg82vcqxgaqcx8sdmxdfbc3na3sxbz-objc4-709.1/include -iframework /nix/store/59n42rjvl9a5ifvxd517d8w1vh1vd8gb-apple-framework-QuartzCore/Library/Frameworks -iframework /nix/store/vljag50j68phc4b12kjn58j72wmkqyn2-apple-framework-CoreImage/Library/Frameworks -iframework /nix/store/rvwfh036p037cl965fvsfqyzdi1xr9ll-apple-framework-CoreVideo/Library/Frameworks -iframework /nix/store/wplwzmzd04hm6a347gs2879q7is7plz7-apple-framework-OpenGL/Library/Frameworks -iframework /nix/store/w4lfw999vrhflqp3i37bkd4jwvz60h9r-apple-framework-Metal/Library/Frameworks -iframework /nix/store/v7zbw5mg831h6r6708gcj3yajh1qg43q-apple-framework-OpenCL/Library/Frameworks -iframework /nix/store/v6n57qpb4nbk8b5h4acpizv8dm4vr1sc-apple-framework-UIFoundation/Library/Frameworks -iframework /nix/store/cxgavx802sfxdl8gwd9samzmrbpddgs7-swift-corefoundation-unstable-2018-09-14/Library/Frameworks
+# environment
+LC_TERMINAL_VERSION = 3.4.15
+# environment
+CAML_LD_LIBRARY_PATH = /Users/hoangpq/.opam/default/lib/stublibs:/usr/local/lib/ocaml/stublibs:/usr/local/lib/ocaml
+# environment
+NVM_DIR = /Users/hoangpq/.nvm
+# environment
+WASMER_DIR = /Users/hoangpq/.wasmer
+# default
+MAKE_COMMAND := make
+# environment
+strictDeps = 
+# environment
+HISTFILE = /Users/hoangpq/.zsh_history
+# environment
+GOPATH = /Users/hoangpq/go
+# environment
+rvm_bin_path = /Users/hoangpq/.rvm/bin
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+LD_DYLD_PATH = /usr/lib/dyld
+# environment
+LOCALE_ARCHIVE = 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+COMMAND_MODE = unix2003
+# environment
+PWD = /Users/hoangpq/CLionProjects/r-binding
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+SOURCE_DATE_EPOCH = 315532800
+# environment
+__darwinAllowLocalNetworking = 
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages/share:/nix/store/xbzazr7nc1jwjdx6bhalym86i3a3ixrn-attoparsec-0.14.4/share
+# environment
+NIX_LDFLAGS =  -liconv -liconv -L/nix/store/250rgi56m5m64mzysnl013mamql7m44y-ncurses-6.3/lib -L/nix/store/m9pw27mcrwvgqmxrky5sgwq74gj4kznl-libffi-3.4.2/lib -L/nix/store/dg37pv5d79qyf32b2x2731f9x73ibn8d-gmp-with-cxx-6.2.1/lib -L/nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50/lib -L/nix/store/iss600p631icf9lcmh8pp1q64p3gcivx-libcxx-11.1.0/lib -L/nix/store/pkk0i3pabrk2zyxad7frjjq13zpiqkjv-libcxxabi-11.1.0/lib -L/nix/store/2l8fllihyy7y7b0a4x8v9q9p12126mwn-compiler-rt-libc-11.1.0/lib -L/nix/store/xr9353nsqqx88ki7dhhqrs42sidd9c82-zlib-1.2.12/lib -L/nix/store/gkvg82vcqxgaqcx8sdmxdfbc3na3sxbz-objc4-709.1/lib -L/nix/store/250rgi56m5m64mzysnl013mamql7m44y-ncurses-6.3/lib -L/nix/store/m9pw27mcrwvgqmxrky5sgwq74gj4kznl-libffi-3.4.2/lib -L/nix/store/dg37pv5d79qyf32b2x2731f9x73ibn8d-gmp-with-cxx-6.2.1/lib -L/nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50/lib -L/nix/store/iss600p631icf9lcmh8pp1q64p3gcivx-libcxx-11.1.0/lib -L/nix/store/pkk0i3pabrk2zyxad7frjjq13zpiqkjv-libcxxabi-11.1.0/lib -L/nix/store/2l8fllihyy7y7b0a4x8v9q9p12126mwn-compiler-rt-libc-11.1.0/lib -L/nix/store/xr9353nsqqx88ki7dhhqrs42sidd9c82-zlib-1.2.12/lib -L/nix/store/gkvg82vcqxgaqcx8sdmxdfbc3na3sxbz-objc4-709.1/lib
+# environment
+PATH_LOCALE = /nix/store/68r3liajxjp68b6k45gmbynkmr4fdq56-adv_cmds-119-locale/share/locale
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+DART_SDK_ROOT = /usr/local/Cellar/dart/2.12.4
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NIX_GHCPKG = /nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages/bin/ghc-pkg
+# automatic
+%F = $(notdir $%)
+# environment
+NVM_INC = /Users/hoangpq/.nvm/versions/node/v14.18.2/include/node
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/hoangpq/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+rvm_sdk = 
+# environment
+LANG = C
+# environment
+rvm_gemstone_package_file = 
+# environment
+ONNX_LIB = /Users/hoangpq/contribute/onnxruntime-osx-x64-1.6.0/lib
+# default
+.LOADED := 
+# environment
+TMP = /tmp
+# default
+.INCLUDE_DIRS = /nix/store/dg7k71np29gcsqmhfzk1mgpn8x3a3vzr-gnumake-4.3/include
+# environment
+GEM_PATH = /Users/hoangpq/.rvm/gems/ruby-2.7.2:/Users/hoangpq/.rvm/gems/ruby-2.7.2@global
+# environment
+COLORFGBG = 7;0
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# makefile
+MAKEFLAGS = pqrR
+# environment
+IDRIS2_PREFIX = /Users/hoangpq/contribute/idris2/lib
+# environment
+NIX_BUILD_CORES = 8
+# environment
+stdenv = /nix/store/h9gsc58gh43831rzwdwv3ddfld1qh8hi-stdenv-darwin
+# environment
+__propagatedImpureHostDeps = 
+# environment
+NIX_HARDENING_ENABLE = fortify stackprotector pic strictoverflow format relro bindnow
+# makefile
+CURDIR := /Users/hoangpq/CLionProjects/r-binding
+# environment
+NIX_BINTOOLS = /nix/store/rra44zngk3bk2sdnhxqwfcdwpyy9l39f-cctools-binutils-darwin-wrapper-949.0.1
+# environment
+MCFLY_SESSION_ID = gwONkBBHzdO0DGRAxBw23PXM
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /var/folders/69/r_nh2ysj7sj71dnl2ybgbq1r0000gn/T//ssh-dNU5Y9DKHfX8/agent.2454
+# default
+.SHELLFLAGS := -c
+# environment
+NVM_BIN = /Users/hoangpq/.nvm/versions/node/v14.18.2/bin
+# environment
+rvm_gemstone_url = 
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+CONDA_SHLVL = 1
+# automatic
+@F = $(notdir $@)
+# environment
+MACOSX_DEPLOYMENT_TARGET = 10.12
+# environment
+ZSH = /Users/hoangpq/.oh-my-zsh
+# environment
+OCAML_TOPLEVEL_PATH = /Users/hoangpq/.opam/default/lib/toplevel
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 28572
+# environment
+SDKMAN_DIR = /Users/hoangpq/.sdkman
+# environment
+installPhase = null
+# environment
+rvm_pretty_print_flag = 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+RANLIB = ranlib
+# environment
+NIX_NO_SELF_RPATH = 1
+# environment
+MY_RUBY_HOME = /Users/hoangpq/.rvm/rubies/ruby-2.7.2
+# environment
+CONDA_PYTHON_EXE = /Users/hoangpq/opt/anaconda3/bin/python
+# environment
+rvm_ruby_make = 
+# environment
+propagatedNativeBuildInputs = 
+# environment
+rvm_only_path_flag = 
+# environment
+depsHostHost = 
+# automatic
+*F = $(notdir $*)
+# environment
+shell = /nix/store/8f6h1lp9i8s0pd31n220k9zh1ksb13ln-bash-5.1-p16/bin/bash
+# environment
+SDKMAN_VERSION = 5.15.0
+# environment
+EM_CONFIG = /Users/hoangpq/.emscripten
+# environment
+LLVMVM_ROOT = /Users/hoangpq/.llvmvm
+# environment
+system = x86_64-darwin
+# environment
+depsBuildBuild = 
+# environment
+rvm_ruby_make_install = 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+ITERM_PROFILE = Default
+# environment
+rvm_nightly_flag = 
+# environment
+NIX_IGNORE_LD_THROUGH_GCC = 1
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+depsTargetTargetPropagated = 
+# environment
+depsBuildTargetPropagated = 
+# environment
+JDK_16 = /Users/hoangpq/.sdkman/candidates/java/current
+# environment
+ANDROID_SDK_ROOT = /usr/local/share/android-sdk
+# default
+MAKE_HOST := x86_64-apple-darwin17.7.0
+# environment
+ANDROID_HOME = /Users/hoangpq/Library/Android/sdk
+# environment
+CONDA_PREFIX = /Users/hoangpq/opt/anaconda3
+# makefile
+SHELL = sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 5
+# environment
+rvm_path = /Users/hoangpq/.rvm
+# environment
+STRINGS = strings
+# environment
+ 
+ANDROID_NDK = /Users/hoangpq/Library/Android/sdk/ndk/21.0.6113669
+# environment
+rvm_alias_expanded = 
+# environment
+NIX_GHC_LIBDIR = /nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages/lib/ghc-9.0.2
+# environment
+MCFLY_HISTORY = /var/folders/69/r_nh2ysj7sj71dnl2ybgbq1r0000gn/T/mcfly.XXXXXXXX.FlyaooOH
+# environment
+buildInputs = /nix/store/xr9353nsqqx88ki7dhhqrs42sidd9c82-zlib-1.2.12 /nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50 /nix/store/b1r80xip0h0j0kf1503sph7l3dsv5ybk-R-4.1.3 /nix/store/4wvgsc8jq96wyl3njhnz6nbmgv7px3w0-cabal-install-3.6.2.0 /nix/store/agv36py3378yhi984zf94zqlfmrqqlbr-hpack-0.34.7 /nix/store/84cq5yz2z5sca3z6k2lxmfqi10x1zzxs-haskell-language-server-1.7.0.0 /nix/store/w6266skv0a9nyhyc2r6lcw3xm2b07397-haskell-dap-0.0.15.0 /nix/store/9s8ng09wq371dg65l8x2x5l64icyndc0-ghci-dap-0.0.17.0 /nix/store/blci9fd6q43qmmakarfv67m68749g4i7-haskell-debug-adapter-0.0.35.0 /nix/store/8kdp7kix9ca49rb1ypy23f8cclbbip8k-phoityne-vscode-0.0.28.0 /nix/store/fnlf75hj4gz5vcrk3jmakxz1m2kmqm7v-hlint-3.3.6 /nix/store/lf2dqvzhada22gmz68nhrd2wswcfsd6i-fmt-0.6.3.0 /nix/store/9l0qcckv6d4d51zaqhs4754n525vrnz0-random-1.2.1 /nix/store/y6bjhqvz8dpiqqr9nz58rfgiq0cbzz1p-text-show-3.9.6 /nix/store/gjkg49yb8i1fhfmrsac017pv2lihz56r-cassava-0.5.2.0 /nix/store/kahjvhqcjg4n2sdsmm479klhyr3ddn30-r-rmarkdown-2.13 /nix/store/81q6hkpckx7r5ngclkark7lvydmz1cv5-r-knitr-1.38 /nix/store/1ydw20is426251539840srcy4ays4965-r-rgl-0.108.3 /nix/store/qkijxlsz02l7drdjmakladwmswkr2fq5-r-magick-2.7.3 /nix/store/7swjvnr5asrsv2l7j9l7pigwzxp3ni1l-r-ggplot2-3.3.5 /nix/store/5md4mg53hq1b3fx2ircd87abfyqhqb5n-r-rgdal-1.5-29
+# environment
+NIX_CC = /nix/store/76qggrv7apidg6fn0pg8323dk9a058jn-clang-wrapper-11.1.0
+# environment
+MAKELEVEL := 0
+# environment
+ITERM_SESSION_ID = w0t0p0:6F426039-DDA5-4C57-8554-A5AB86A50D89
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+__sandboxProfile = 
+# environment
+PATH = /nix/store/rzbxiwdsla94dggi2am915v5g57kdlfj-bash-interactive-5.1-p16/bin:/nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages/bin:/nix/store/agv36py3378yhi984zf94zqlfmrqqlbr-hpack-0.34.7/bin:/nix/store/76qggrv7apidg6fn0pg8323dk9a058jn-clang-wrapper-11.1.0/bin:/nix/store/vx7vzzrm6v2q45xqn7lkn6jk1qf28z3w-clang-11.1.0/bin:/nix/store/xfrq31wvbzmr1cf08kckp71k7bj08lvz-coreutils-9.0/bin:/nix/store/rra44zngk3bk2sdnhxqwfcdwpyy9l39f-cctools-binutils-darwin-wrapper-949.0.1/bin:/nix/store/33af8rfybf77g683gm36v57g5pr7xyz5-cctools-binutils-darwin-949.0.1/bin:/nix/store/250rgi56m5m64mzysnl013mamql7m44y-ncurses-6.3/bin:/nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50/bin:/nix/store/b1r80xip0h0j0kf1503sph7l3dsv5ybk-R-4.1.3/bin:/nix/store/4wvgsc8jq96wyl3njhnz6nbmgv7px3w0-cabal-install-3.6.2.0/bin:/nix/store/84cq5yz2z5sca3z6k2lxmfqi10x1zzxs-haskell-language-server-1.7.0.0/bin:/nix/store/bdi132fayp1fba0lkvyzhksjhvqpxw94-aeson-pretty-0.8.9/bin:/nix/store/wxk65789xgxrzyh48ri51xin3zsvq95p-ghc-9.0.2/bin:/nix/store/abi6rycywna2pqghyncrg7hx0zrs4rv2-ghcide-1.7.0.0/bin:/nix/store/7z42r9dgcmlq6ya26b1smckj5hpvdjxg-constraints-extras-0.3.2.1/bin:/nix/store/m0cjpwgyqjdg55jg8lf177yg1hhpmqdj-hie-bios-0.9.1/bin:/nix/store/qgak62i8056031zmg71adg74hb9spsqj-hiedb-0.4.1.0/bin:/nix/store/nmw870kshywq35ks607cg0xjiz8ffajq-implicit-hie-0.1.2.7/bin:/nix/store/zq3nvfglvlzv09y4qgqgx430y74hqp25-retrie-1.1.0.0/bin:/nix/store/js6w5r2dm652qyxd1zhj80qzygmq5dh8-shake-0.19.6/bin:/nix/store/1zxpl2cxnv8jhvilis616bz81ps7phq8-floskell-0.10.6/bin:/nix/store/hx838hr78kw6bk9jnnccyk2d37ky2rhw-fourmolu-0.4.0.0/bin:/nix/store/8f2idjgghnm75nwsmj67rbx86rh2fx1x-apply-refact-0.9.3.0/bin:/nix/store/fnlf75hj4gz5vcrk3jmakxz1m2kmqm7v-hlint-3.3.6/bin:/nix/store/l5fm4v2093s7097hr0q5r0i1d2dgkb9l-cpphs-1.20.9.1/bin:/nix/store/rq4afv1k34cxc0nvf9kksp1mah399dk9-hscolour-1.24.4/bin:/nix/store/ndamaqxcc3g76r6qjjxrlwdr5h4mb6i5-ormolu-0.3.1.0-bin/bin:/nix/store/9s8ng09wq371dg65l8x2x5l64icyndc0-ghci-dap-0.0.17.0/bin:/nix/store/blci9fd6q43qmmakarfv67m68749g4i7-haskell-debug-adapter-0.0.35.0/bin:/nix/store/8kdp7kix9ca49rb1ypy23f8cclbbip8k-phoityne-vscode-0.0.28.0/bin:/nix/store/xfrq31wvbzmr1cf08kckp71k7bj08lvz-coreutils-9.0/bin:/nix/store/y14j6wabs9vk11rs01nr9lkikszz2aij-findutils-4.9.0/bin:/nix/store/q8d99x34fn0q0gkdj9b64ir3zrzrmyvw-diffutils-3.8/bin:/nix/store/77gfbfvrvpxzh4zcacd17vfvikj49vp4-gnused-4.8/bin:/nix/store/1vvmcdkq7mjffzkjki2fyw6v9328c1y6-gnugrep-3.7/bin:/nix/store/cmyb8p5dn13ffw3jccj6pzfs4lm6sy9m-gawk-5.1.1/bin:/nix/store/mnjmbnfk6kb9fwdgdwv56g6jyv4ihcg3-gnutar-1.34/bin:/nix/store/zifn7pql5caxx92jriw3l9n85n8ch2c0-gzip-1.12/bin:/nix/store/nvzan40nbz476xavshjk3akzj3dg3bp2-bzip2-1.0.6.0.2-bin/bin:/nix/store/dg7k71np29gcsqmhfzk1mgpn8x3a3vzr-gnumake-4.3/bin:/nix/store/8f6h1lp9i8s0pd31n220k9zh1ksb13ln-bash-5.1-p16/bin:/nix/store/7lsqvl5yjy04zknrfhjxw1rpc0axz4rs-patch-2.7.6/bin:/nix/store/x8lf29kvma0d88z25a7gy4nfwabfal0a-xz-5.2.5-bin/bin:/Users/hoangpq/.opam/default/bin:/usr/local/opt/llvm@12/bin:/Users/hoangpq/opt/anaconda3/bin:/Users/hoangpq/opt/anaconda3/condabin:/Users/hoangpq/Library/Android/sdk/cmdline-tools/latest/bin:/usr/local/opt/llvm@12/bin:/Users/hoangpq/.swiftenv/shims:/Users/hoangpq/.wasienv/bin:/Users/hoangpq/Library/pnpm:/Users/hoangpq/.yarn/bin:/Users/hoangpq/.config/yarn/global/node_modules/.bin:/usr/local/opt/python@3.10/bin:/Users/hoangpq/.wasmer/bin:/Users/hoangpq/.tfenv/bin:/Users/hoangpq/.wasmtime/bin:/usr/local/opt/llvm@9/bin:/usr/local/bin:/Users/hoangpq/zls:/Users/hoangpq/.deno/bin:/Users/hoangpq/.asdf/shims:/Users/hoangpq/.asdf/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/hoangpq/.local/share/solana/install/active_release/bin:/usr/local/opt/bison/bin:/usr/local/opt/binutils/bin:/usr/local/opt/ruby/bin:/Users/hoangpq/.cabal/bin:/Users/hoangpq/.ghcup/bin:/Users/hoangpq/.wasienv/bin:/Users/hoangpq/.wasmer/bin:/opt/local/bin:/opt/local/sbin:/usr/local/opt/llvm/bin:/Users/hoangpq/.sdkman/candidates/scala/current/bin:/Users/hoangpq/.sdkman/candidates/sbt/current/bin:/Users/hoangpq/.sdkman/candidates/java/current/bin:/usr/local/opt/erlang@21/bin:/Users/hoangpq/.cargo/bin:~/.jsvu:/Users/hoangpq/.nvm/versions/node/v14.18.2/bin:/Users/hoangpq/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/Volumes/VampireSSDPassport/fuchsia/.jiri_root/bin:/Users/hoangpq/.rvm/gems/ruby-2.7.2/bin:/Users/hoangpq/.rvm/gems/ruby-2.7.2@global/bin:/Users/hoangpq/.rvm/rubies/ruby-2.7.2/bin:/Users/hoangpq/.llvmvm/bin:/Users/hoangpq/.rvm/bin:/Users/hoangpq/contribute/x86_64-macos:/Users/hoangpq/Library/Android/sdk/platform-tools:/usr/local/opt/postgresql@10/bin:/Users/hoangpq/contribute/flutter/bin:/Users/hoangpq/contribute/google-cloud-sdk/bin:/Users/hoangpq/contribute/depot_tools:/Users/hoangpq/contribute/wabt/build:/Users/hoangpq/contribute/haskell-ide-engine/.stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/hie:/Users/hoangpq/contribute/android_repo:/Users/hoangpq/contribute/ghc-8.4.0/bin:/Users/hoangpq/Desktop/Amazon-Best-Seller:/Users/hoangpq/contribute/ngrok:/Users/hoangpq/.local/bin:/Users/hoangpq/ndk-standalone/arm64/bin:/Users/hoangpq/ndk-standalone/arm/bin:/Users/hoangpq/ndk-standalone/x86/bin:/Users/hoangpq/Library/Android/sdk/ndk/21.0.6113669:/Users/hoangpq/contribute/emsdk:/Users/hoangpq/contribute/emsdk/fastcomp/emscripten:/Users/hoangpq/contribute/emsdk/node/12.9.1_64bit/bin:/Users/hoangpq/.wasmer/globals/wapm_packages/.bin:/Users/hoangpq/contribute/idris2/bin:/Users/hoangpq/contribute/jd-cli-0.9.2-dist:/Users/hoangpq/.dotnet/tools:/Users/hoangpq/contribute/v:/Applications/Julia-1.7.app/Contents/Resources/julia/bin:/Users/hoangpq/fvm/default/bin:/Users/hoangpq/coding/zig:/Users/hoangpq/.ghcup/bin:/Applications/MacPorts/Emacs.app/Contents/MacOS:/Users/hoangpq/go/bin:/Users/hoangpq/.wasmer/globals/wapm_packages/.bin:/Users/hoangpq/.rvm/bin:/Users/hoangpq/.rvm/bin
+# environment
+EMSDK_NODE = /Users/hoangpq/contribute/emsdk/node/12.9.1_64bit/bin/node
+# environment
+NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+doCheck = 
+# environment
+ 
+NIX_GHC = /nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages/bin/ghc
+# environment
+SDKMAN_CANDIDATES_DIR = /Users/hoangpq/.sdkman/candidates
+# environment
+rvm_silent_flag = 
+# environment
+WASMTIME_HOME = /Users/hoangpq/.wasmtime
+# environment
+configureFlags = 
+# environment
+name = ghc-shell-for-pgrest-0.1.0.0
+# environment
+rvm_niceness = 
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+TERM_PROGRAM = iTerm.app
+# environment
+SIZE = size
+# environment
+NIX_COREFOUNDATION_RPATH = /System/Library/Frameworks
+# automatic
+?F = $(notdir $?)
+# environment
+rvm_ruby_mode = 
+# environment
+LLVMVM_PATH_BACKUP = /Users/hoangpq/.llvmvm/bin:/Users/hoangpq/.local/share/solana/install/active_release/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/hoangpq/.rvm/bin
+# environment
+rvm_hook = 
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+WASMER_CACHE_DIR = /Users/hoangpq/.wasmer/cache
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+IRBRC = /Users/hoangpq/.rvm/rubies/ruby-2.7.2/.irbrc
+# environment
+SBT_HOME = /Users/hoangpq/.sdkman/candidates/sbt/current
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+NIX_DONT_SET_RPATH_FOR_BUILD = 1
+# environment
+LOGNAME = hoangpq
+# environment
+NDK_HOME = /Users/hoangpq/Library/Android/sdk/ndk/21.0.6113669
+# environment
+propagatedBuildInputs = 
+# environment
+IDEA_JDK = /Users/hoangpq/contribute/jdk-11.0.2.jdk
+# environment
+EMSDK = /Users/hoangpq/contribute/emsdk
+# environment
+NIX_INDENT_MAKE = 1
+# environment
+XPC_FLAGS = 0x0
+# environment
+ASDF_DIR = /Users/hoangpq/.asdf
+# makefile
+.DEFAULT_GOAL := build
+# environment
+phases = installPhase
+# environment
+CONFIG_SHELL = /nix/store/8f6h1lp9i8s0pd31n220k9zh1ksb13ln-bash-5.1-p16/bin/bash
+# environment
+NIX_STORE = /nix/store
+# environment
+depsBuildBuildPropagated = 
+# environment
+rvm_version = 1.29.12 (latest)
+# environment
+USER = hoangpq
+# default
+MAKE_VERSION := 4.3
+# environment
+NIX_PROFILES = /nix/var/nix/profiles/default /Users/hoangpq/.nix-profile
+# environment
+NDK_STANDALONE = /Users/hoangpq/ndk-standalone
+# environment
+depsHostHostPropagated = 
+# environment
+TERM_SESSION_ID = w0t0p0:6F426039-DDA5-4C57-8554-A5AB86A50D89
+# environment
+NIX_DONT_SET_RPATH = 1
+# environment
+OPAM_SWITCH_PREFIX = /Users/hoangpq/.opam/default
+# environment
+depsTargetTarget = 
+# environment
+WASIENV_DIR = /Users/hoangpq/.wasienv
+# environment
+depsBuildTarget = 
+# environment
+SSH_AGENT_PID = 2455
+# environment
+PAGER = less
+# environment
+NIX_BUILD_TOP = /tmp
+# environment
+_ = /nix/store/dg7k71np29gcsqmhfzk1mgpn8x3a3vzr-gnumake-4.3/bin/make
+# environment
+ANDROID_NDK_ROOT = /Users/hoangpq/Library/Android/sdk/ndk/21.0.6113669
+# environment
+patches = 
+# environment
+GEM_HOME = /Users/hoangpq/.rvm/gems/ruby-2.7.2
+# environment
+outputs = out
+# environment
+COLORTERM = truecolor
+# environment
+_CE_M = 
+# environment
+NIX_GHC_DOCDIR = /nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages/share/doc/ghc/html
+# environment
+NVM_CD_FLAGS = -q
+# environment
+IN_NIX_SHELL = impure
+# environment
+NIX_ENFORCE_NO_NATIVE = 1
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+ANDROID_SDK = /Users/hoangpq/Library/Android/sdk
+# environment
+builder = /nix/store/8f6h1lp9i8s0pd31n220k9zh1ksb13ln-bash-5.1-p16/bin/bash
+# environment
+SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
+# environment
+HOME = /Users/hoangpq
+# environment
+rvm_ruby_file = 
+# environment
+NIX_BINTOOLS_WRAPPER_TARGET_HOST_x86_64_apple_darwin = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TERM = xterm-256color
+# environment
+TEMP = /tmp
+# environment
+VSCODE_IPC_HOOK = /Users/hoangpq/Library/Application Support/Code/1.68.0-main.sock
+# environment
+NM = nm
+# environment
+nativeBuildInputs = /nix/store/qavyf399bbmr6hgc2r838ljb47nv4b0p-ghc-9.0.2-with-packages /nix/store/agv36py3378yhi984zf94zqlfmrqqlbr-hpack-0.34.7
+# environment
+rvm_use_flag = 
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+NIX_PATH = darwin-config=/Users/hoangpq/.nixpkgs/darwin-configuration.nix:/Users/hoangpq/.nix-defexpr/channels:/Users/hoangpq/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels
+# default
+SUFFIXES := 
+# environment
+LD = ld
+# environment
+rvm_bin_flag = 
+# environment
+VSCODE_CLI = 1
+# environment
+NIX_LDFLAGS_FOR_TARGET =  -liconv
+# environment
+NIX_CC_WRAPPER_TARGET_HOST_x86_64_apple_darwin = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+rvm_proxy = 
+# environment
+STRIP = strip
+# environment
+BAZEL_USE_CPP_ONLY_TOOLCHAIN = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+HOST_PATH = /nix/store/250rgi56m5m64mzysnl013mamql7m44y-ncurses-6.3/bin:/nix/store/92a1kmj8xbmyxhv4qpxk1ahx2rqfp8rg-libiconv-50/bin:/nix/store/b1r80xip0h0j0kf1503sph7l3dsv5ybk-R-4.1.3/bin:/nix/store/4wvgsc8jq96wyl3njhnz6nbmgv7px3w0-cabal-install-3.6.2.0/bin:/nix/store/agv36py3378yhi984zf94zqlfmrqqlbr-hpack-0.34.7/bin:/nix/store/84cq5yz2z5sca3z6k2lxmfqi10x1zzxs-haskell-language-server-1.7.0.0/bin:/nix/store/bdi132fayp1fba0lkvyzhksjhvqpxw94-aeson-pretty-0.8.9/bin:/nix/store/wxk65789xgxrzyh48ri51xin3zsvq95p-ghc-9.0.2/bin:/nix/store/abi6rycywna2pqghyncrg7hx0zrs4rv2-ghcide-1.7.0.0/bin:/nix/store/7z42r9dgcmlq6ya26b1smckj5hpvdjxg-constraints-extras-0.3.2.1/bin:/nix/store/m0cjpwgyqjdg55jg8lf177yg1hhpmqdj-hie-bios-0.9.1/bin:/nix/store/qgak62i8056031zmg71adg74hb9spsqj-hiedb-0.4.1.0/bin:/nix/store/nmw870kshywq35ks607cg0xjiz8ffajq-implicit-hie-0.1.2.7/bin:/nix/store/zq3nvfglvlzv09y4qgqgx430y74hqp25-retrie-1.1.0.0/bin:/nix/store/js6w5r2dm652qyxd1zhj80qzygmq5dh8-shake-0.19.6/bin:/nix/store/1zxpl2cxnv8jhvilis616bz81ps7phq8-floskell-0.10.6/bin:/nix/store/hx838hr78kw6bk9jnnccyk2d37ky2rhw-fourmolu-0.4.0.0/bin:/nix/store/8f2idjgghnm75nwsmj67rbx86rh2fx1x-apply-refact-0.9.3.0/bin:/nix/store/fnlf75hj4gz5vcrk3jmakxz1m2kmqm7v-hlint-3.3.6/bin:/nix/store/l5fm4v2093s7097hr0q5r0i1d2dgkb9l-cpphs-1.20.9.1/bin:/nix/store/rq4afv1k34cxc0nvf9kksp1mah399dk9-hscolour-1.24.4/bin:/nix/store/ndamaqxcc3g76r6qjjxrlwdr5h4mb6i5-ormolu-0.3.1.0-bin/bin:/nix/store/9s8ng09wq371dg65l8x2x5l64icyndc0-ghci-dap-0.0.17.0/bin:/nix/store/blci9fd6q43qmmakarfv67m68749g4i7-haskell-debug-adapter-0.0.35.0/bin:/nix/store/8kdp7kix9ca49rb1ypy23f8cclbbip8k-phoityne-vscode-0.0.28.0/bin:/nix/store/xfrq31wvbzmr1cf08kckp71k7bj08lvz-coreutils-9.0/bin:/nix/store/y14j6wabs9vk11rs01nr9lkikszz2aij-findutils-4.9.0/bin:/nix/store/q8d99x34fn0q0gkdj9b64ir3zrzrmyvw-diffutils-3.8/bin:/nix/store/77gfbfvrvpxzh4zcacd17vfvikj49vp4-gnused-4.8/bin:/nix/store/1vvmcdkq7mjffzkjki2fyw6v9328c1y6-gnugrep-3.7/bin:/nix/store/cmyb8p5dn13ffw3jccj6pzfs4lm6sy9m-gawk-5.1.1/bin:/nix/store/mnjmbnfk6kb9fwdgdwv56g6jyv4ihcg3-gnutar-1.34/bin:/nix/store/zifn7pql5caxx92jriw3l9n85n8ch2c0-gzip-1.12/bin:/nix/store/nvzan40nbz476xavshjk3akzj3dg3bp2-bzip2-1.0.6.0.2-bin/bin:/nix/store/dg7k71np29gcsqmhfzk1mgpn8x3a3vzr-gnumake-4.3/bin:/nix/store/8f6h1lp9i8s0pd31n220k9zh1ksb13ln-bash-5.1-p16/bin:/nix/store/7lsqvl5yjy04zknrfhjxw1rpc0axz4rs-patch-2.7.6/bin:/nix/store/x8lf29kvma0d88z25a7gy4nfwabfal0a-xz-5.2.5-bin/bin
+# environment
+CXX = clang++
+# environment
+CC = clang
+# environment
+rvm_prefix = /Users/hoangpq
+# environment
+SCALA_HOME = /Users/hoangpq/.sdkman/candidates/scala/current
+# environment
+__impureHostDeps = /bin/sh /usr/lib/libSystem.B.dylib /usr/lib/system/libunc.dylib /dev/zero /dev/random /dev/urandom /bin/sh
+# environment
+__propagatedSandboxProfile = 
+# environment
+TERM_PROGRAM_VERSION = 3.4.15
+# environment
+rvm_script_name = 
+# environment
+RUBY_VERSION = ruby-2.7.2
+# environment
+CONDA_EXE = /Users/hoangpq/opt/anaconda3/bin/conda
+# environment
+_CE_CONDA = 
+# variable set hash-table stats:
+# Load=246/1024=24%, Rehash=0, Collisions=36/275=13%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 13075973555): 44 files, no impossibilities.
+
+# 44 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2022-02-21 23:41:08
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := clean
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 12):
+	rm -rf bindings.json
+
+fmt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	cargo fmt
+	deno fmt --ignore=target/
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: clean fmt build example
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	cargo build
+
+example:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	deno run --unstable -A examples/simple.ts
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/24=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 52 / storage = 556 B / avg = 10 B
+# current buf: size = 8162 B / used = 556 B / count = 52 / avg = 10 B
+
+# strcache performance: lookups = 66 / hit rate = 21%
+# hash-table stats:
+# Load=52/8192=1%, Rehash=0, Collisions=0/66=0%
+# Finished Make data base on Sat Jun 25 20:02:54 2022
+
+ 

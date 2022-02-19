@@ -1,0 +1,4 @@
+cradle:
+  cabal:
+    - path: "app/Eval.hs"
+      component: "r-binding:exe:r-binding"
