@@ -9,6 +9,7 @@ let
     hsc2hs hint 
   ];
   rTools = with pkgs.rPackages; [
+    svglite
     # rmarkdown
     # knitr
     # rgl

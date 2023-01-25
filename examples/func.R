@@ -1,3 +1,12 @@
+# install.packages("svglite")
+save_svg <- function(a) {
+  svglite::svglite("examples/plot.svg")
+  plot(1:11, (-5:5)^2, type = 'b', main = "Simple Example")
+  dev.off()
+
+  return (1)
+}
+
 add1 <- function(a) {
   cat("add1 received:", a, " ")
   cat("\n")

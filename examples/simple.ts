@@ -4,4 +4,5 @@ runR(() => {
   r_load("examples/func.R");
   r_call("add1", c(1, 2, 3, 4, 5));
   r_call("add2", c("hello", "world"));
+  r_call("save_svg", c(1));
 });
