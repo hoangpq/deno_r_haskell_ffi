@@ -9,8 +9,8 @@ const PORTS = [
   9058,
   9059,
   9060,
-  9061
-]
+  9061,
+];
 
 for (const port of PORTS) {
   Deno.spawn(Deno.execPath(), {
@@ -21,7 +21,7 @@ for (const port of PORTS) {
       "request_ip.ts",
     ],
     env: {
-      HTTPS_PROXY: `socks5://127.0.0.1:${port}`
+      HTTPS_PROXY: `socks5://127.0.0.1:${port}`,
     },
   });
 }

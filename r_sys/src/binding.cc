@@ -3,7 +3,7 @@
 /**
  * Create new R vector
  */
-SEXP c(u_int32_t len, int *val) {
+SEXP c(uint32_t len, int *val) {
     SEXP arg;
 
     PROTECT(arg = allocVector(INTSXP, len));
@@ -37,14 +37,14 @@ SEXP r_call(const char *name, SEXP arg) {
     if (Rf_isString(ret) == Rboolean::TRUE) {
         SEXP *val2 = STRING_PTR(ret);
         for (int i = 0; i < LENGTH(ret); i++) {
-            printf("%s\n", RAW_OR_NULL(val2[i]));
+            // printf("%s\n", RAW_OR_NULL(val2[i]));
         }
     } else {
         double *val = REAL(ret);
-        printf("%s\n", Rf_isReal(ret) == Rboolean::TRUE ? "true" : "false");
+        // printf("%s\n", Rf_isReal(ret) == Rboolean::TRUE ? "true" : "false");
 
         for (int i = 0; i < LENGTH(ret); i++) {
-            printf("%d\n", (int) val[i]);
+            // printf("%d\n", (int) val[i]);
         }
     }
 

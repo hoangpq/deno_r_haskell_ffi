@@ -55,8 +55,4 @@ export const SYMBOLS = {
     parameters: ["pointer", "u32"],
     result: "pointer",
   },
-  test_serde: {
-    parameters: [],
-    result: "pointer",
-  },
 } as const;

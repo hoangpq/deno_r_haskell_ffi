@@ -1,6 +1,7 @@
 #ifndef BINDING_H
 #define BINDING_H
 
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -19,10 +20,10 @@ extern "C" {
 R_API void init_vm_r();
 R_API void release_vm_r();
 
-R_API SEXP c(u_int32_t, int *);
+R_API SEXP c(uint32_t, int *);
 R_API void r_load(const char *);
 R_API SEXP r_call(const char *, SEXP);
-R_API SEXP int_to_r(int);
+// R_API SEXP int_to_r(int);
 
 #ifdef __cplusplus
 }

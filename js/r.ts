@@ -1,16 +1,18 @@
-import __ from "https://deno.land/x/dirname@1.1.2/mod.ts";
-import * as path from "https://deno.land/std@0.125.0/path/mod.ts";
 import { cstr } from "./utils.ts";
-
-const { __dirname } = __(import.meta);
-
 import { SYMBOLS } from "./ffi.ts";
+
+const decoder = new TextDecoder();
+const p = Deno.run({ cmd: ["R", "RHOME"], stdout: "piped", stderr: "piped" });
+
+// await its completion
+await p.status();
+Deno.env.set("R_HOME", decoder.decode(await p.output()).replace("\n", ""));
 
 let R!: Deno.DynamicLibrary<typeof SYMBOLS>["symbols"];
 
 try {
   R = Deno.dlopen(
-    path.join(__dirname, "..", "/target/debug/libr_binding.dylib"),
+    new URL("../target/release/libr_binding.dylib", import.meta.url),
     SYMBOLS,
   ).symbols;
 } catch (e) {
@@ -97,14 +99,8 @@ function readPointer(v: any): Uint8Array {
   return buf;
 }
 
-const decoder = new TextDecoder();
-
 export function runR(handler: () => any) {
   R.r_init_vm();
-
-  const result = readPointer(R.test_serde());
-  console.log(decoder.decode(result));
-
   handler();
   R.r_release_vm();
 }

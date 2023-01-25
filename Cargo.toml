@@ -1,10 +1,10 @@
 [package]
 name = "r-binding"
-version = "0.1.0"
+version = "0.10.1"
 edition = "2021"
 
 [lib]
-path = "src/bindings.rs"
+path = "js/bindings.rs"
 crate-type = ["cdylib"]
 
 [dependencies]

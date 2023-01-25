@@ -1,4 +1,3 @@
-import __ from "https://deno.land/x/dirname@1.1.2/mod.ts";
 import { cstr } from "./utils.ts";
 
 export const SYMBOLS = {
@@ -50,7 +49,7 @@ export const SYMBOLS = {
 let Haskell!: Deno.DynamicLibrary<typeof SYMBOLS>["symbols"];
 
 try {
-  const path = "../libs/libEval";
+  const path = new URL("../libs/libEval", import.meta.url);
 
   Haskell = Deno.dlopen(
     path,
