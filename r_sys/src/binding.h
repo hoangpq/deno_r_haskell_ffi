@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include <Rinternals.h>
 #include <Rembedded.h>
@@ -22,8 +23,10 @@ R_API void release_vm_r();
 
 R_API SEXP c(uint32_t, int *);
 R_API void r_load(const char *);
-R_API SEXP r_call(const char *, SEXP);
-// R_API SEXP int_to_r(int);
+R_API SEXP r_call(SEXP, SEXP);
+R_API SEXP r_function(const char *);
+R_API SEXP named_arguments(uint32_t, SEXP);
+R_API SEXP set_argument(const char *, SEXP, SEXP);
 
 #ifdef __cplusplus
 }

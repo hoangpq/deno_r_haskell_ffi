@@ -55,4 +55,20 @@ export const SYMBOLS = {
     parameters: ["pointer", "u32"],
     result: "pointer",
   },
+  R_NilValue: {
+    name: "R_NilValue",
+    type: "pointer",
+  },
+  r_function: {
+    parameters: ["pointer"],
+    result: "pointer",
+  },
+  named_arguments: {
+    parameters: ["u32", "pointer"],
+    result: "pointer",
+  },
+  set_argument: {
+    parameters: ["pointer", "pointer", "pointer"],
+    result: "pointer",
+  },
 } as const;

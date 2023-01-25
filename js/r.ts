@@ -59,8 +59,8 @@ export function r_load(path: string) {
   R.r_load(cstr(path));
 }
 
-export function r_call(func: string, arg: Sexp) {
-  R.r_call(cstr(func), arg.handle);
+export function r_call(f: Sexp, arg: Sexp) {
+  R.r_call(f, arg.handle);
 }
 
 export function c(...elems: any[]): Sexp {
@@ -85,22 +85,110 @@ export function c(...elems: any[]): Sexp {
   return new Sexp(v_);
 }
 
-function readPointer(v: any): Uint8Array {
-  const ptr = new Deno.UnsafePointerView(v);
-  const lengthBe = new Uint8Array(4);
-  const view = new DataView(lengthBe.buffer);
-  ptr.copyInto(lengthBe, 0);
-
-  console.log(view.getUint32(0));
-
-  const buf = new Uint8Array(view.getUint32(0));
-  ptr.copyInto(buf, 4);
-
-  return buf;
-}
-
 export function runR(handler: () => any) {
   R.r_init_vm();
   handler();
   R.r_release_vm();
+}
+
+export const ProxiedPyObject = Symbol("ProxiedPyObject");
+
+class RValue {
+  public handle: Deno.PointerValue;
+
+  public constructor(handle: Deno.PointerValue) {
+    this.handle = handle;
+  }
+
+  static from(handle: Deno.PointerValue): RValue {
+    return new RValue(handle);
+  }
+}
+
+export class RFunc extends RValue {
+  public name: string;
+
+  constructor(name: string) {
+    super(R.r_function(cstr(name)));
+    this.name = name;
+  }
+
+  get proxy(): any {
+    const scope = this;
+
+    function object(...args: any[]) {
+      return scope.call(args)?.proxy;
+    }
+
+    Object.defineProperty(object, Symbol.for("Deno.customInspect"), {
+      value: () => this.toString(),
+    });
+
+    Object.defineProperty(object, Symbol.iterator, {
+      value: () => this[Symbol.iterator](),
+    });
+
+    Object.defineProperty(object, ProxiedPyObject, {
+      value: this,
+      enumerable: false,
+    });
+
+    Object.defineProperty(object, "toString", {
+      value: () => this.toString(),
+    });
+
+    Object.defineProperty(object, "valueOf", {
+      value: () => this.valueOf(),
+    });
+
+    return new Proxy(object, {
+      get: (_, name) => {
+        console.log("get");
+      },
+      set: (_, name, value) => {
+        console.log("set");
+      },
+      has: (_, name) => {
+        console.log("has");
+      },
+    });
+  }
+
+  call(args: NamedArgument[]): Sexp {
+    console.log(args);
+    let f = R.named_arguments(args.length, this.handle);
+
+    let f1 = f;
+    for (const arg of args) {
+      f1 = R.set_argument(cstr(arg.name), arg.value, f1);
+    }
+
+    return R.r_call(f, f);
+  }
+}
+
+export class NamedArgument {
+  name: string;
+  value: Sexp;
+
+  public static of(name: string, value: number) {
+    return new NamedArgument(name, value);
+  }
+
+  public static raw(name: string, value: Sexp) {
+    return new NamedArgument(name, value);
+  }
+
+  constructor(name: string, value: number | Sexp) {
+    this.name = name;
+    this.value = typeof value === "number"
+      ? R.Rf_ScalarInteger(value)
+      : value.handle;
+  }
+}
+
+export class RInstance {
+  public static func(name: string): any {
+    return new RFunc(name).proxy;
+  }
 }
