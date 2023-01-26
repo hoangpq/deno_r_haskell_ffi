@@ -1,4 +1,4 @@
-import { cstr } from "./utils.ts";
+import { cstr } from "../utils.ts";
 import { SYMBOLS } from "./ffi.ts";
 
 const decoder = new TextDecoder();
@@ -12,7 +12,7 @@ let R!: Deno.DynamicLibrary<typeof SYMBOLS>["symbols"];
 
 try {
   R = Deno.dlopen(
-    new URL("../target/release/libr_binding.dylib", import.meta.url),
+    new URL("../../target/release/libr_binding.dylib", import.meta.url),
     SYMBOLS,
   ).symbols;
 } catch (e) {

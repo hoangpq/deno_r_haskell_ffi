@@ -1,1 +1,1 @@
-export * from "./js/r.ts";
+export * from "./js/core/r.ts";
