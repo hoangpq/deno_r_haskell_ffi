@@ -1,7 +1,7 @@
-import { c, NamedArgument, r_load, RInstance, runR } from "../mod.ts";
+import { c, NamedArgument, r_load, RInstance, runR } from "../core/mod.ts";
 
 runR(() => {
-  r_load("examples/func.R");
+  r_load("playground/func.R");
   const save_svg = RInstance.func("save_svg");
 
   save_svg(

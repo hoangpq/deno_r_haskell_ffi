@@ -1,6 +1,5 @@
 import asyncio
 import time
-
 from cffi import FFI
 
 ffi = FFI()
@@ -14,7 +13,7 @@ def callback(x):
 ffi.cdef("""
     extern int *eval(const char *, int *);
     typedef void (*callback)(int);
-    extern void goroutine(callback cb);
+    extern int goroutine(callback cb);
 """)
 
 
@@ -28,7 +27,7 @@ async def nested(hs):
 
 
 async def main():
-    hs = ffi.dlopen("./hs/libEval.dylib")
+    hs = ffi.dlopen("libs/libEval")
     s = ffi.new("char[]", "1 + 2 + 3".encode('ascii'))
     r = ffi.new("int *")
     hs.eval(s, r)

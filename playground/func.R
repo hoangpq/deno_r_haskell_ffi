@@ -4,8 +4,13 @@ save_svg <- function(a, b = 2, c) {
   cat("b received:", b, "\n")
   cat("c received:", c, "\n")
 
-  svglite::svglite("examples/plot.svg")
-  plot(1:11, (-5:5)^2, type = 'b', main = "Simple Example")
+  svglite::svglite("playground/plot.svg")
+  # Create some data
+  x <- c("A", "B", "C", "D")
+  y <- c(3, 5, 2, 8)
+  # Plot the data
+  barplot(y, names.arg = x, xlab = "Categories", ylab = "Values", main = "Bar Plot Example")
+  # plot(1:11, (-5:5)^2, type = 'b', main = "Simple Example")
   dev.off()
   return (1)
 }

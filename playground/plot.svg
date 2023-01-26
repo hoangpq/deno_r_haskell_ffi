@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='82.40' y='333.50' width='126.96' height='164.67' style='stroke-width: 0.75; fill: #BEBEBE;' />
+<rect x='234.75' y='223.71' width='126.96' height='274.46' style='stroke-width: 0.75; fill: #BEBEBE;' />
+<rect x='387.10' y='388.39' width='126.96' height='109.78' style='stroke-width: 0.75; fill: #BEBEBE;' />
+<rect x='539.44' y='59.04' width='126.96' height='439.13' style='stroke-width: 0.75; fill: #BEBEBE;' />
+<text x='145.88' y='528.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='8.01px' lengthAdjust='spacingAndGlyphs'>A</text>
+<text x='298.23' y='528.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='8.01px' lengthAdjust='spacingAndGlyphs'>B</text>
+<text x='450.57' y='528.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='8.67px' lengthAdjust='spacingAndGlyphs'>C</text>
+<text x='602.92' y='528.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='8.67px' lengthAdjust='spacingAndGlyphs'>D</text>
+<text x='374.40' y='34.70' text-anchor='middle' style='font-size: 14.40px; font-weight: bold; font-family: "Arial";' textLength='118.37px' lengthAdjust='spacingAndGlyphs'>Bar Plot Example</text>
+<text x='374.40' y='557.28' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='58.03px' lengthAdjust='spacingAndGlyphs'>Categories</text>
+<text transform='translate(12.96,280.80) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='36.69px' lengthAdjust='spacingAndGlyphs'>Values</text>
+<line x1='59.04' y1='498.17' x2='59.04' y2='59.04' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='498.17' x2='51.84' y2='498.17' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='388.39' x2='51.84' y2='388.39' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='278.60' x2='51.84' y2='278.60' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='168.82' x2='51.84' y2='168.82' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='59.04' x2='51.84' y2='59.04' style='stroke-width: 0.75;' />
+<text transform='translate(41.76,498.17) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text transform='translate(41.76,388.39) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text transform='translate(41.76,278.60) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text transform='translate(41.76,168.82) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text transform='translate(41.76,59.04) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>8</text>
+</g>
+</svg>

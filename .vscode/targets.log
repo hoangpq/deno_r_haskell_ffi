@@ -595,7 +595,7 @@ example:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 9):
-	deno run --unstable -A examples/simple.ts
+	deno run --unstable -A examples/r.ts
 
 # Not a target:
 .SUFFIXES:
