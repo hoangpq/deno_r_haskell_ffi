@@ -12,8 +12,8 @@ export const SYMBOLS = {
     result: "void",
   },
   r_call: {
-    parameters: ["pointer", "pointer"],
-    result: "void",
+    parameters: ["pointer"],
+    result: "pointer",
   },
   r_c: {
     parameters: ["i32", "pointer"],

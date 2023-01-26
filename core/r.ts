@@ -117,7 +117,8 @@ export class RFunc extends RValue {
     const scope = this;
 
     function object(...args: any[]) {
-      return scope.call(args)?.proxy;
+      // return scope.call(args)?.proxy;
+      return scope.call(args);
     }
 
     Object.defineProperty(object, Symbol.for("Deno.customInspect"), {
@@ -155,15 +156,14 @@ export class RFunc extends RValue {
   }
 
   call(args: NamedArgument[]): Sexp {
-    console.log(args);
     let f = R.r_named_arguments(args.length, this.handle);
 
-    let f1 = f;
+    let call = f;
     for (const arg of args) {
-      f1 = R.r_set_argument(cstr(arg.name), arg.value, f1);
+      call = R.r_set_argument(cstr(arg.name), arg.value, call);
     }
 
-    return R.r_call(f, f);
+    return new Sexp(R.r_call(f));
   }
 }
 
@@ -196,8 +196,7 @@ export class RInstance {
     return R.r_eval(cstr(expr));
   }
 
-  public static print(expr: Deno.PointerValue) {
-    console.log(expr);
-    // console.log(jstr(R.r_print(expr)));
+  public static print(expr: Sexp) {
+    R.r_print(expr.handle);
   }
 }

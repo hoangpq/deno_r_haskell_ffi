@@ -6,7 +6,6 @@
  */
 SEXP c(uint32_t len, int *val) {
     SEXP arg;
-
     PROTECT(arg = allocVector(INTSXP, len));
     memcpy(INTEGER(arg), val, len * sizeof(int));
     return arg;
@@ -17,7 +16,6 @@ SEXP c(uint32_t len, int *val) {
  */
 void r_load(const char *name) {
     SEXP e;
-
     PROTECT(e = lang2(install("source"), mkString(name)));
     R_tryEval(e, R_GlobalEnv, NULL);
     UNPROTECT(1);
@@ -43,14 +41,14 @@ SEXP r_set_argument(const char *key, SEXP value, SEXP call) {
 /**
  * Invoke R function
  */
-SEXP r_call(SEXP call, SEXP args) {
+SEXP r_call(SEXP call) {
+    PROTECT(call);
+
     // Execute the function
-    int errorOccurred;
+    int error_occurred;
+    SEXP ret = R_tryEval(call, R_GlobalEnv, &error_occurred);
 
-    SEXP ret = R_tryEval(call, R_GlobalEnv, &errorOccurred);
-    UNPROTECT(2);
-
-    if (Rf_isString(ret) == Rboolean::TRUE) {
+    /*if (Rf_isString(ret) == Rboolean::TRUE) {
         SEXP *val2 = STRING_PTR(ret);
         for (int i = 0; i < LENGTH(ret); i++) {
             // printf("%s\n", RAW_OR_NULL(val2[i]));
@@ -58,15 +56,11 @@ SEXP r_call(SEXP call, SEXP args) {
     } else {
         double *val = REAL(ret);
         // printf("%s\n", Rf_isReal(ret) == Rboolean::TRUE ? "true" : "false");
-
         for (int i = 0; i < LENGTH(ret); i++) {
             // printf("%d\n", (int) val[i]);
         }
-    }
+    }*/
 
-    r_print(ret);
-
-    // UNPROTECT(2);
     return ret;
 }
 
@@ -100,18 +94,21 @@ SEXP r_eval(const char *expr_str) {
     // UNPROTECT(1);
 
     PROTECT(result = R_tryEval(e, R_GlobalEnv, &error_occured));
-    printf("%d\n", error_occured);
+    // printf("%d\n", error_occured);
 
     if (error_occured) {
         UNPROTECT(2);
         return R_NilValue;
     }
-
-    UNPROTECT(2);
-    // r_print(result);
-    // printf("Addredd: %p\n", &result);
-
+    // UNPROTECT(2);
     return result;
+}
+
+void r_print(SEXP expr) {
+    printSEXP(expr);
+    /*SEXP e;
+    PROTECT(e = lang2(r_function("print"), expr));
+    R_tryEval(e, R_GlobalEnv, NULL);;*/
 }
 
 // Init R environment

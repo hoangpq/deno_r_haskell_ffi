@@ -24,11 +24,12 @@ R_API void release_vm_r();
 
 R_API SEXP c(uint32_t, int *);
 R_API void r_load(const char *);
-R_API SEXP r_call(SEXP, SEXP);
+R_API SEXP r_call(SEXP);
 R_API SEXP r_function(const char *);
 R_API SEXP r_named_arguments(uint32_t, SEXP);
 R_API SEXP r_set_argument(const char *, SEXP, SEXP);
 R_API SEXP r_eval(const char *);
+R_API void r_print(SEXP);
 
 #ifdef __cplusplus
 }

@@ -17,13 +17,12 @@ save_svg <- function(a, b = 2, c) {
 
 add1 <- function(a) {
   cat("add1 received:", a, " ")
-  cat("\n")
-
+  cat("\nend func1\n")
   return(a + 1)
 }
 
 add2 <- function(a) {
   cat("add2 received:", a, " ")
-  cat("\n")
+  cat("\nend func2\n")
   return(a)
 }

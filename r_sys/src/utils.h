@@ -6,6 +6,6 @@
 
 int dumpLimit = 128;
 
-void r_print(SEXP e);
+void printSEXP(SEXP e);
 
 #endif /* UTILS_H */

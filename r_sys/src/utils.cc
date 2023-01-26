@@ -1,6 +1,6 @@
 #include "utils.h"
 
-void r_print(SEXP e) {
+void printSEXP(SEXP e) {
     int t = TYPEOF(e);
     int i = 0;
 
@@ -25,10 +25,10 @@ void r_print(SEXP e) {
             };
             if (TAG(l) != R_NilValue) {
                 printf("(TAG:");
-                r_print(TAG(l));
+                printSEXP(TAG(l));
                 printf(") ");
             }
-            r_print(CAR(l));
+            printSEXP(CAR(l));
             l = CDR(l);
         }
         return;
@@ -88,7 +88,7 @@ void r_print(SEXP e) {
                 printf("...");
                 break;
             };
-            r_print(VECTOR_ELT(e, i));
+            printSEXP(VECTOR_ELT(e, i));
             i++;
         }
         return;
@@ -128,7 +128,7 @@ void r_print(SEXP e) {
                 printf("...");
                 break;
             };
-            r_print(VECTOR_ELT(e, i));
+            printSEXP(VECTOR_ELT(e, i));
             i++;
         }
         return;
@@ -140,7 +140,7 @@ void r_print(SEXP e) {
                 printf("...");
                 break;
             };
-            r_print(STRING_ELT(e, i));
+            printSEXP(STRING_ELT(e, i));
             i++;
         }
         return;
@@ -151,7 +151,7 @@ void r_print(SEXP e) {
     }
     if (t == SYMSXP) {
         printf("Symbol, name: ");
-        r_print(PRINTNAME(e));
+        printSEXP(PRINTNAME(e));
         return;
     }
     if (t == S4SXP) {
