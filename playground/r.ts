@@ -16,5 +16,20 @@ runR(() => {
 
   const add2 = RInstance.func("add2");
   add2(NamedArgument.raw("a", res));
-  // RInstance.eval("2 + 2");
+
+  RInstance.eval(`
+    r_test <- function(a = c(3, 5, 2, 8)) { 
+      cat("Value from R:", a, "\n")
+      svglite::svglite("playground/plot.svg")
+      # Create some data
+      x <- c("A", "B", "C", "D")
+      y <- a
+      # Plot the data
+      barplot(y, names.arg = x, xlab = "Categories", ylab = "Values", main = "Bar Plot Example")
+      # plot(1:11, (-5:5)^2, type = 'b', main = "Simple Example")
+      dev.off()
+      return (1)
+    }`);
+  RInstance.func("r_test")(NamedArgument.of("a", c(1, 2, 3, 20)));
+  RInstance.eval("r_test()");
 });
