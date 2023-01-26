@@ -4,3 +4,4 @@
 Cargo.lock
 /cmake-build-debug
 dist-newstyle/
+/node_modules
