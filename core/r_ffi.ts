@@ -63,12 +63,20 @@ export const SYMBOLS = {
     parameters: ["pointer"],
     result: "pointer",
   },
-  named_arguments: {
+  r_named_arguments: {
     parameters: ["u32", "pointer"],
     result: "pointer",
   },
-  set_argument: {
+  r_set_argument: {
     parameters: ["pointer", "pointer", "pointer"],
     result: "pointer",
+  },
+  r_eval: {
+    parameters: ["pointer"],
+    result: "pointer",
+  },
+  r_print: {
+    parameters: ["pointer"],
+    result: "void",
   },
 } as const;

@@ -19,9 +19,11 @@ macro_rules! export {
 
 export!(r_init_vm, fn init_vm_r());
 export!(r_release_vm, fn release_vm_r());
+export!(r_c, fn c(len: u32, value: *const i32) -> SEXP);
 export!(r_load, fn r_load(module: *const c_char));
 export!(r_call, fn r_call(f: SEXP, arg: SEXP) -> SEXP);
-export!(r_c, fn c(len: u32, value: *const i32) -> SEXP);
 export!(r_function, fn r_function(fname: *const c_char) -> SEXP);
-export!(named_arguments, fn named_arguments(args: u32, f: SEXP) ->SEXP);
-export!(set_argument, fn set_argument(name: *const c_char, value: SEXP, call: SEXP) -> SEXP);
+export!(r_named_arguments, fn r_named_arguments(args: u32, f: SEXP) ->SEXP);
+export!(r_set_argument, fn r_set_argument(name: *const c_char, value: SEXP, call: SEXP) -> SEXP);
+export!(r_eval, fn r_eval(name: *const c_char) -> SEXP);
+export!(r_print, fn r_print(sexp: SEXP));

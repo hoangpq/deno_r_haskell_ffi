@@ -1,5 +1,5 @@
-import { cstr } from "./utils.ts";
-import { SYMBOLS } from "./ffi.ts";
+import { cstr, jstr } from "./utils.ts";
+import { SYMBOLS } from "./r_ffi.ts";
 
 const decoder = new TextDecoder();
 const p = Deno.run({ cmd: ["R", "RHOME"], stdout: "piped", stderr: "piped" });
@@ -156,11 +156,11 @@ export class RFunc extends RValue {
 
   call(args: NamedArgument[]): Sexp {
     console.log(args);
-    let f = R.named_arguments(args.length, this.handle);
+    let f = R.r_named_arguments(args.length, this.handle);
 
     let f1 = f;
     for (const arg of args) {
-      f1 = R.set_argument(cstr(arg.name), arg.value, f1);
+      f1 = R.r_set_argument(cstr(arg.name), arg.value, f1);
     }
 
     return R.r_call(f, f);
@@ -190,5 +190,14 @@ export class NamedArgument {
 export class RInstance {
   public static func(name: string): any {
     return new RFunc(name).proxy;
+  }
+
+  public static eval(expr: string): any {
+    return R.r_eval(cstr(expr));
+  }
+
+  public static print(expr: Deno.PointerValue) {
+    console.log(expr);
+    // console.log(jstr(R.r_print(expr)));
   }
 }

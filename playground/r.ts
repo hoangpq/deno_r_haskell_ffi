@@ -11,8 +11,12 @@ runR(() => {
   );
 
   const add1 = RInstance.func("add1");
-  add1(NamedArgument.raw("a", c(1, 2, 3, 20, 100)));
+  const r1 = add1(NamedArgument.raw("a", c(1, 2, 3, 20, 100)));
+  // RInstance.print(r1);
 
   const add2 = RInstance.func("add2");
   add2(NamedArgument.raw("a", c("hello", "world")));
+
+  RInstance.eval("2 + 2");
+  // RInstance.print(ptr);
 });

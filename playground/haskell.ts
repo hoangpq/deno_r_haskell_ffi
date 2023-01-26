@@ -1,4 +1,4 @@
-import { Haskell, cstr } from "../core/mod.ts";
+import { cstr, Haskell } from "../core/mod.ts";
 
 type i32 = number;
 const cb = new Deno.UnsafeCallback(

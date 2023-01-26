@@ -13,10 +13,12 @@ fn main() {
 
     cc::Build::new()
         .cpp(true)
+        .include("src/utils.h")
         .include("src/binding.h")
         .include("src/include")
         .flag_if_supported("-w")
         .flag_if_supported("-std=c++11")
+        .file("src/utils.cc")
         .file("src/binding.cc")
         .compile("r");
 }

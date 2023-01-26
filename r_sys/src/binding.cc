@@ -1,4 +1,5 @@
 #include "binding.h"
+#include "utils.h"
 
 /**
  * Create new R vector
@@ -26,39 +27,13 @@ SEXP r_function(const char *name) {
     return Rf_install(name);
 }
 
-SEXP r_arguments(const char *name, uint32_t argc, ...) {
-    va_list ptr;
-    va_start(ptr, argc);
-    SEXP sexps[argc];
-    for (int i = 0; i < argc; i++) {
-        sexps[i] = va_arg(ptr, SEXP);
-    }
-    va_end (ptr);
-
-    SEXP func_;
-    SEXP function_name = install(name);
-
-    switch (argc) {
-        case 0:
-            PROTECT(func_ = lang1(function_name));
-            break;
-        case 1:
-            PROTECT(func_ = lang2(function_name, sexps[0]));
-            break;
-        case 2:
-            PROTECT(func_ = lang3(function_name, sexps[0], sexps[1]));
-            break;
-    }
-    return func_;
-}
-
-SEXP named_arguments(uint32_t argc, SEXP f) {
+SEXP r_named_arguments(uint32_t argc, SEXP f) {
     SEXP call = PROTECT(Rf_allocVector(LANGSXP, argc + 1));
     SETCAR(call, f);
     return call;
 }
 
-SEXP set_argument(const char *key, SEXP value, SEXP call) {
+SEXP r_set_argument(const char *key, SEXP value, SEXP call) {
     SEXP s = CDR(call);
     SETCAR(s, value);
     SET_TAG(s, Rf_install(key));
@@ -89,8 +64,54 @@ SEXP r_call(SEXP call, SEXP args) {
         }
     }
 
-    UNPROTECT(2);
+    r_print(ret);
+
+    // UNPROTECT(2);
     return ret;
+}
+
+/**
+ * Eval R expression
+ */
+SEXP r_eval(const char *expr_str) {
+    SEXP result, tmp, e1, val_parse;
+    int error_occured;
+
+    // language construct
+    PROTECT(e1 = allocVector(LANGSXP, 2));
+    SETCAR(e1, Rf_install("parse"));
+    SETCAR(CDR(e1), tmp = NEW_CHARACTER(1));
+    SET_STRING_ELT(tmp, 0, COPY_TO_USER_STRING(expr_str));
+
+    SEXP next = CDR(e1);
+    SET_TAG(next, Rf_install("text"));
+
+    PROTECT(val_parse = R_tryEval(e1, R_GlobalEnv, &error_occured));
+
+    if (error_occured) {
+        UNPROTECT(1);
+        return R_NilValue;
+    }
+
+    SEXP e;
+    PROTECT(e = allocVector(LANGSXP, 2));
+    SETCAR(e, Rf_install("eval"));
+    SETCAR(CDR(e), val_parse);
+    // UNPROTECT(1);
+
+    PROTECT(result = R_tryEval(e, R_GlobalEnv, &error_occured));
+    printf("%d\n", error_occured);
+
+    if (error_occured) {
+        UNPROTECT(2);
+        return R_NilValue;
+    }
+
+    UNPROTECT(2);
+    // r_print(result);
+    // printf("Addredd: %p\n", &result);
+
+    return result;
 }
 
 // Init R environment

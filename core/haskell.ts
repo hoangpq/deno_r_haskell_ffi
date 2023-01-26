@@ -45,7 +45,8 @@ export const SYMBOLS = {
 } as const;
 
 const path = new URL("../libs/libEval", import.meta.url);
-export const Haskell: Deno.DynamicLibrary<typeof SYMBOLS>["symbols"] = Deno.dlopen(
-  path,
-  SYMBOLS,
-).symbols;
+export const Haskell: Deno.DynamicLibrary<typeof SYMBOLS>["symbols"] =
+  Deno.dlopen(
+    path,
+    SYMBOLS,
+  ).symbols;

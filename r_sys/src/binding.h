@@ -8,6 +8,7 @@
 
 #include <Rinternals.h>
 #include <Rembedded.h>
+#include <Rdefines.h>
 
 #ifndef R_API
 #define R_API extern
@@ -25,8 +26,9 @@ R_API SEXP c(uint32_t, int *);
 R_API void r_load(const char *);
 R_API SEXP r_call(SEXP, SEXP);
 R_API SEXP r_function(const char *);
-R_API SEXP named_arguments(uint32_t, SEXP);
-R_API SEXP set_argument(const char *, SEXP, SEXP);
+R_API SEXP r_named_arguments(uint32_t, SEXP);
+R_API SEXP r_set_argument(const char *, SEXP, SEXP);
+R_API SEXP r_eval(const char *);
 
 #ifdef __cplusplus
 }

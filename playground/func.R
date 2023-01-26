@@ -24,5 +24,6 @@ add1 <- function(a) {
 
 add2 <- function(a) {
   cat("add2 received:", a, " ")
+  cat("\n")
   return(a)
 }
