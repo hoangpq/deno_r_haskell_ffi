@@ -1,4 +1,4 @@
-import { cstr, jstr } from "./utils.ts";
+import { cstr } from "./utils.ts";
 import { SYMBOLS } from "./r_ffi.ts";
 
 const decoder = new TextDecoder();
