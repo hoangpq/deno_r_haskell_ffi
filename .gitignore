@@ -5,3 +5,5 @@ Cargo.lock
 /cmake-build-debug
 dist-newstyle/
 /node_modules
+zig-cache/
+zig-out/
