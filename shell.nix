@@ -4,7 +4,7 @@ let
   hsTools = with pkgs.haskellPackages; [
     cabal-install hpack 
     haskell-language-server 
-    haskell-dap ghci-dap haskell-debug-adapter phoityne-vscode 
+    haskell-dap ghci-dap
     hlint fmt random text-show cassava 
     hsc2hs hint 
   ];
