@@ -1,5 +1,5 @@
 cabal-version:      2.4
-name:               r-binding
+name:               hs-binding
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
@@ -23,9 +23,8 @@ extra-source-files:
     CHANGELOG.md
     README.MD
 
-library r-binding-lib
-    main-is:          app/Main.hs
-    exposed-modules:  Main
+library libEval
+    -- exposed-modules:  Main
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
@@ -33,7 +32,7 @@ library r-binding-lib
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     ghc-options:      -O2 -dynamic -shared -fPIC -o libs/libEval
-    c-sources:        c-src/hsbracket.c
+    c-sources:        app/c-src/hsbracket.c
     build-depends:    base >= 4.7 && <5
                     , stm
     hs-source-dirs:   app

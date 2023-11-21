@@ -4,10 +4,10 @@ const testing = std.testing;
 const c_std = @cImport({
     @cInclude("stdlib.h");
 });
-const base64 = @import("base64.zig");
+const base64 = @import("./base64.zig");
 
 export fn b64encode(input: [*]const u8, len: usize, res: [*]u8) void {
-    var p = @ptrCast([*]u8, res)[0..((len / 3) * 4)];
+    var p = @as([*]u8, @ptrCast(res))[0..((len / 3) * 4)];
     _ = base64.encode(p, input[0..len]);
 }
 

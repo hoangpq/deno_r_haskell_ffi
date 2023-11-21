@@ -40,7 +40,7 @@ mkArray vals = do
     return ptr
 
 array :: IO (Ptr CInt)
-array = mkArray [10,20..100]
+array = mkArray [10,50..100]
 
 f :: String -> IO ()
 f from = forM_ [0..2]

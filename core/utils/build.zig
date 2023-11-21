@@ -3,18 +3,23 @@ const std = @import("std");
 pub fn build(b: *std.build.Builder) void {
     // Standard release options allow the person running `zig build` to select
     // between Debug, ReleaseSafe, ReleaseFast, and ReleaseSmall.
-    const mode = b.standardReleaseOptions();
+    const target = b.standardTargetOptions(.{});
+    const optimize = b.standardOptimizeOption(.{});
 
     // const lib = b.addStaticLibrary("utils", "src/main.zig");
-    const lib = b.addSharedLibrary("utils", "src/main.zig", b.version(0, 0, 1));
+    const lib = b.addSharedLibrary(.{ .name = "utils", .root_source_file = .{ .path = "src/main.zig" }, .optimize = optimize, .target = target });
+
     lib.linkLibC();
     // lib.addIncludePath("src/include");
-    lib.setBuildMode(mode);
-    lib.install();
+    b.installArtifact(lib);
 
-    const main_tests = b.addTest("src/main.zig");
-    main_tests.setBuildMode(mode);
+    const unit_tests = b.addTest(.{
+        .root_source_file = .{ .path = "src/main.zig" },
+        .target = target,
+        .optimize = optimize,
+    });
+    const run_unit_tests = b.addRunArtifact(unit_tests);
 
-    const test_step = b.step("test", "Run library tests");
-    test_step.dependOn(&main_tests.step);
+    const test_step = b.step("test", "Run unit tests");
+    test_step.dependOn(&run_unit_tests.step);
 }

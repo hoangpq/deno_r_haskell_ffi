@@ -1,7 +1,7 @@
 { mkDerivation, aeson, base, bytestring, HDBC, HDBC-postgresql
 , heroku, hpack, hspec, http-types, lib, network, network-uri
 , optparse-applicative, text, unordered-containers, wai, warp
-, fmt, random, text-show, cassava
+, random, text-show, cassava
 }:
 mkDerivation {
   pname = "pgrest";
@@ -13,7 +13,7 @@ mkDerivation {
   executableHaskellDepends = [
     aeson base bytestring HDBC HDBC-postgresql heroku hspec http-types
     network network-uri optparse-applicative text unordered-containers
-    wai warp fmt cassava
+    wai warp cassava
   ];
   prePatch = "hpack";
   homepage = "https://github.com/githubuser/pgrest#readme";
