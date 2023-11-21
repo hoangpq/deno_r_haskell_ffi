@@ -7,3 +7,4 @@ dist-newstyle/
 /node_modules
 zig-cache/
 zig-out/
+.DS_Store
