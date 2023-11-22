@@ -17,8 +17,8 @@ let
   ];
 in
   pkgs.mkShell {
-    inputsFrom = [ (pkgs.haskellPackages.callCabal2nix "practical-haskell" ./. { }).env ];
+    inputsFrom = [ (pkgs.haskellPackages.callCabal2nix "practical-haskell" ./hs_binding { }).env ];
     buildInputs = (with pkgs.haskellPackages; [
       cabal-install haskell-language-server hlint
-    ] ++ [ pkgs.zlib pkgs.libiconv pkgs.R ] ++ hsTools ++ rTools);
+    ] ++ [ pkgs.zlib pkgs.libiconv pkgs.R pkgs.cargo pkgs.rustc ] ++ hsTools ++ rTools);
   }
